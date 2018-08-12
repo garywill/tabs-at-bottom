@@ -1,2 +1,7 @@
 # tabs-at-bottom
-Firefox tabbar at bottom, userchrome script
+Firefox tab bar at bottom, userchrome script.
+
+
+Put `chrome` folder in firefox profile folder. Delete `startupCache` in profile folder.
+
+Tested on firefox 60
