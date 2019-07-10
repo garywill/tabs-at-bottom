@@ -1,0 +1,20 @@
+/* for tab bar at bottom's height, and in fullscreen to collapse and hover show */
+/* tested on firefox 68 */
+
+#TabsToolbar:not([inFullscreen="true"]) ,#TabsToolbar:hover {
+    max-height: var(--tab-min-height) !important;
+    height: var(--tab-min-height) !important;
+}
+
+#TabsToolbar[inFullscreen="true"] {
+    height: 3px;
+    max-height: 3px;
+}
+#TabsToolbar[inFullscreen="true"]  > *{
+    visibility: collapse !important;
+}
+#TabsToolbar:hover  > *{
+    visibility: visible !important;
+}
+
+
