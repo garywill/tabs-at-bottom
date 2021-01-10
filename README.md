@@ -1,6 +1,8 @@
-# tabs-at-bottom
+# Tabs at bottom
 
 Firefox tab bar at bottom of window
+
+![screenshot](Screenshot.png)
 
 Firefox userChrome JS script
 
