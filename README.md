@@ -6,16 +6,17 @@ Firefox tab bar at bottom of window
 
 Firefox userChrome JS script
 
-Tested on firefox 78.
+Tested on firefox 91.
 
 > Notice: do not load this code by tab bar itself, or firefox will infinite loop.
 
-## How to enable
 
-This repo only contains the specific function, doesn't contain the code to enable userchrome script.
 
-For how to enable, see
+---------------------
 
-- https://github.com/xiaoxiaoflood/firefox-scripts
+This repo only contains the specific function, doesn't contain the code to enable userchrome scripts.
 
-- https://github.com/Aris-t2/CustomJSforFx
+**For how to enable, see: (also more of my scripts)**
+
+https://garywill.github.io/#Firefox-userChrome-CSS-or-JS
+
