@@ -31,7 +31,7 @@ console.log("tabs_below_content.js");
         {
             tabsbar.style.display = "";   // unhide
         }
-
+        
     });
     tabsbar_fullscr_observer.observe(nav_tb,{attributes:true});
     
@@ -46,27 +46,46 @@ console.log("tabs_below_content.js");
             background-color: var(--lwt-accent-color-inactive, var(--lwt-accent-color));
             background-image: var(--lwt-header-image), var(--lwt-additional-images);
         }
-        #TabsToolbar:not([inFullscreen="true"]) ,
-        #TabsToolbar:hover 
+        
+        #TabsToolbar:not([inFullscreen="true"])
         {  
             max-height: var(--tab-min-height) !important;  
             height: var(--tab-min-height) !important;  
+            min-height: var(--tab-min-height) !important; 
             
         }
+        
         #TabsToolbar[inFullscreen="true"] 
         { 
-            height: 3px; 
-            max-height: 3px; 
-            
+            max-height: 3px !important;  
+            height: 3px !important;
+            min-height: 3px !important;
         }
-        #TabsToolbar:hover  > *
+        #TabsToolbar[inFullscreen="true"]  > *
+        { 
+            max-height: 3px !important;  
+        }
+        
+        #TabsToolbar[inFullscreen="true"]:hover 
+        {  
+            max-height: var(--tab-min-height) !important;  
+            height: var(--tab-min-height) !important;  
+            min-height: var(--tab-min-height) !important; 
+        }
+        
+        #TabsToolbar[inFullscreen="true"]:hover  > *
         { 
             visibility: visible !important;  
-            
+        }
+        
+        
+        #TabsToolbar  > .toolbar-items
+        {
+            max-height: var(--tab-min-height) !important;  
+            height: var(--tab-min-height) !important;  
         }
     `), null, null );
     
     sss.loadAndRegisterSheet(tabbar_css, sss.USER_SHEET);
     
 })();
-
