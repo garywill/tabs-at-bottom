@@ -4,6 +4,10 @@
  * Author: garywill (https://garywill.github.io)
  */
 
+// ==UserScript==
+// @include         main
+// ==/UserScript==
+
 console.log("tabs_below_content.js");
 
 (() => {
