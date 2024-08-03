@@ -6,7 +6,7 @@ Firefox tab bar at bottom of window.
 
 Firefox userChrome JS script.
 
-Tested on firefox 91.
+Tested on firefox 128.
 
 Difference from other CSS code:
 - Use JS to move tab bar DOM to bottom, not CSS
