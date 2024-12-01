@@ -61,8 +61,8 @@ console.log("tabs_below_content.js");
     const tabbar_css = Services.io.newURI( "data:text/css;charset=utf-8," + encodeURIComponent(`
         #TabsToolbar
         {
-            background-color: var(--lwt-accent-color-inactive, var(--lwt-accent-color));
-            background-image: var(--lwt-header-image), var(--lwt-additional-images);
+            background-color: var(--toolbar-bgcolor, var(--toolbar-field-background-color, var(--lwt-accent-color-inactive, var(--lwt-accent-color)))) !important;
+            background-image: var(--lwt-header-image, var(--lwt-additional-images) );
         }
         
     `), null, null );
