@@ -6,11 +6,11 @@ Firefox tab bar at bottom of window.
 
 Firefox userChrome JS script.
 
-Tested on firefox 128.
+Tested on firefox 140.
 
 Difference from other CSS code:
-- Use JS to move tab bar DOM to bottom, not CSS
-- Handle fullscreen also
+- Also uses JS to manipulate DOM
+- Handle fullscreen status by JS MutationObserve
 
 > Notice: do not load this code by tab bar itself, or firefox will infinite loop.
 
